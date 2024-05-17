@@ -1,0 +1,39 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="expo.modules.rightqnative" >
+4
+5    <uses-sdk android:minSdkVersion="23" />
+6
+7    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+7-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:3:5-81
+7-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:3:22-78
+8
+9    <application>
+9-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:5:5-18:19
+10        <service
+10-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:7:9-10:39
+11            android:name="expo.modules.rightqnative.rightqnative.BrokerService"
+11-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:8:13-55
+12            android:enabled="true"
+12-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:9:13-35
+13            android:exported="true" />
+13-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:10:13-36
+14
+15        <receiver
+15-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:12:9-16:20
+16            android:name="expo.modules.rightqnative.rightqnative.BootReceiver"
+16-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:12:66-107
+17            android:enabled="true"
+17-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:12:19-41
+18            android:exported="true" >
+18-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:12:42-65
+19            <intent-filter>
+19-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:13:13-15:29
+20                <action android:name="android.intent.action.BOOT_COMPLETED" />
+20-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:14:17-79
+20-->/Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:14:25-76
+21            </intent-filter>
+22        </receiver>
+23    </application>
+24
+25</manifest>

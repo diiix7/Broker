@@ -1,0 +1,44 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:1:1-19:12
+INJECTED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:1:1-19:12
+	package
+		INJECTED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:3:5-81
+	android:name
+		ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:3:22-78
+application
+ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:5:5-18:19
+service#expo.modules.rightqnative.rightqnative.BrokerService
+ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:7:9-10:39
+	android:enabled
+		ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:9:13-35
+	android:exported
+		ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:10:13-36
+	android:name
+		ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:8:13-55
+receiver#expo.modules.rightqnative.rightqnative.BootReceiver
+ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:12:9-16:20
+	android:enabled
+		ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:12:19-41
+	android:exported
+		ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:12:42-65
+	android:name
+		ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:12:66-107
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:13:13-15:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:14:17-79
+	android:name
+		ADDED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml:14:25-76
+uses-sdk
+INJECTED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml
+INJECTED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/loickadjiwanou/Documents/Projets/Expo/RightQBroker/modules/rightqnative/android/src/main/AndroidManifest.xml
