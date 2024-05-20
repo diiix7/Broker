@@ -10,6 +10,8 @@ import com.facebook.react.defaults.DefaultReactActivityDelegate
 
 import expo.modules.ReactActivityDelegateWrapper
 
+import android.content.Intent
+
 class MainActivity : ReactActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     // Set the theme to AppTheme BEFORE onCreate to support
@@ -19,7 +21,10 @@ class MainActivity : ReactActivity() {
     super.onCreate(null)
 
     // Démarrer le BrokerService
-    startBrokerService()
+    // startBrokerService()
+
+    // Démarrer directement le Broker a l'ouverture de l'app
+    startBrokerAsap()
   }
 
   /**
@@ -62,12 +67,16 @@ class MainActivity : ReactActivity() {
       super.invokeDefaultOnBackPressed()
   }
 
-  private fun startBrokerService() {
-    val serviceIntent = Intent(this, BrokerService::class.java)
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-        startForegroundService(serviceIntent)
-    } else {
-        startService(serviceIntent)
-    }
-}
+  // private fun startBrokerService() {
+  //   val serviceIntent = Intent(this, BrokerService::class.java)
+  //   if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+  //       startForegroundService(serviceIntent)
+  //   } else {
+  //       startService(serviceIntent)
+  //   }
+  // }
+
+  private fun startBrokerAsap() {
+    RightQNativeModule.startBroker()
+  }
 }
