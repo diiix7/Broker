@@ -21,10 +21,7 @@ class MainActivity : ReactActivity() {
     super.onCreate(null)
 
     // Démarrer le BrokerService
-    // startBrokerService()
-
-    // Démarrer directement le Broker a l'ouverture de l'app
-    startBrokerAsap()
+    startBrokerService()
   }
 
   /**
@@ -67,6 +64,11 @@ class MainActivity : ReactActivity() {
       super.invokeDefaultOnBackPressed()
   }
 
+  private fun startBrokerService() {
+    val serviceIntent = Intent(this, BrokerService::class.java)
+    startForegroundService(serviceIntent)
+  }
+
   // private fun startBrokerService() {
   //   val serviceIntent = Intent(this, BrokerService::class.java)
   //   if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -76,7 +78,7 @@ class MainActivity : ReactActivity() {
   //   }
   // }
 
-  private fun startBrokerAsap() {
-    RightQNativeModule.startBroker()
-  }
+  // private fun startBrokerAsap() {
+  //   RightQNativeModule.startBroker()
+  // }
 }

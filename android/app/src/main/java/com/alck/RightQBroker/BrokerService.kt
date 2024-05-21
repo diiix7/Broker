@@ -30,7 +30,7 @@ class BrokerService : Service() {
             val notification: Notification = Notification.Builder(this, "BrokerServiceChannel")
                 .setContentTitle("Broker Service")
                 .setContentText("The broker service is running")
-                .setSmallIcon(R.mipmap.ic_launcher)
+                .setSmallIcon(R.drawable.ic_settings)  
                 .build()
 
             startForeground(1, notification)
