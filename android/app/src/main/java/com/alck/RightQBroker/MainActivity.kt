@@ -20,8 +20,8 @@ class MainActivity : ReactActivity() {
     setTheme(R.style.AppTheme);
     super.onCreate(null)
 
-    // Démarrer le BrokerService
-    startBrokerService()
+    // Démarrer le BrokerService, si ceci est decommenté, on aura besoin d'ouvrir l'app avant que le broker ne demarre
+    // startBrokerService()
   }
 
   /**
@@ -64,10 +64,10 @@ class MainActivity : ReactActivity() {
       super.invokeDefaultOnBackPressed()
   }
 
-  private fun startBrokerService() {
-    val serviceIntent = Intent(this, BrokerService::class.java)
-    startForegroundService(serviceIntent)
-  }
+  // private fun startBrokerService() {
+  //   val serviceIntent = Intent(this, BrokerService::class.java)
+  //   startForegroundService(serviceIntent)
+  // }
 
   // private fun startBrokerService() {
   //   val serviceIntent = Intent(this, BrokerService::class.java)
